@@ -1,13 +1,4 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset=utf-8>
-<meta name="viewport" content="width=620">
-<title>restaurant map</title>
-<link rel="stylesheet" href="css/html5demos.css">
-<script src="js/h5utils.js"></script></head>
-<body>
 <section id="wrapper">
     <header>
 
@@ -19,7 +10,7 @@
       <p>Finding your location: <span id="status">checking...</span></p>
     </article>
 <script>
-function success(position) {
+function success(position) {<!--{{{-->
   var s = document.querySelector('#status');
 
   if (s.className == 'success') {
@@ -53,24 +44,22 @@ function success(position) {
       map: map,
       title:"You are here! (at least within a "+position.coords.accuracy+" meter radius)"
   });
-}
+}<!--}}}-->
 
-function error(msg) {
+function error(msg) {<!--{{{-->
   var s = document.querySelector('#status');
   s.innerHTML = typeof msg == 'string' ? msg : "failed";
   s.className = 'fail';
 
   // console.log(arguments);
-}
+}<!--}}}-->
 
-if (navigator.geolocation) {
+if (navigator.geolocation) {<!--{{{-->
   navigator.geolocation.getCurrentPosition(success, error);
 } else {
-  error('not supported');
+  error('not supported');<!--}}}-->
 }
 
 </script>
 </section>
-</body>
-</html>
 
