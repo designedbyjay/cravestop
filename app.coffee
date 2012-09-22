@@ -578,8 +578,11 @@
     crave.root = (req,res) ->
       console.log 'root'
       res.render 'crave-index.ejs'
+    crave.map = (req,res) ->
+      res.render 'map.ejs'
 
     app.get '/landing', crave.root
+    app.get '/map', crave.map
 
     app.get '/testpage', getAll.projects
     app.get '/viewProject', getAll.viewProject
