@@ -1,0 +1,657 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Welcome to K5’s API documentation! &mdash; K5 API 0.1.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="K5 API 0.1.0 documentation" href="#" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li><a href="#">K5 API 0.1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="welcome-to-k5-s-api-documentation">
+<h1>Welcome to K5&#8217;s API documentation!<a class="headerlink" href="#welcome-to-k5-s-api-documentation" title="Permalink to this headline">¶</a></h1>
+<p>Contents:</p>
+<div class="toctree-wrapper compound">
+<ul class="simple">
+</ul>
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="genindex.html"><em>Index</em></a></li>
+<li><a class="reference internal" href="py-modindex.html"><em>Module Index</em></a></li>
+<li><a class="reference internal" href="search.html"><em>Search Page</em></a></li>
+</ul>
+</div>
+<div class="section" id="api-endpoints">
+<h1>API Endpoints<a class="headerlink" href="#api-endpoints" title="Permalink to this headline">¶</a></h1>
+<p>Feel free to use cURL and python to look at formatted json examples.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">curl</span> <span class="o">/</span><span class="n">v1</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="projects">
+<h1>Projects<a class="headerlink" href="#projects" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><blockquote>
+<div><div class="highlight-js"><div class="highlight"><pre><span class="p">{</span>
+  <span class="nx">projectTitle</span><span class="o">:</span> <span class="s2">&quot;sample proj&quot;</span><span class="p">,</span>
+  <span class="nx">description</span><span class="o">:</span> <span class="s2">&quot;project description&quot;</span><span class="p">,</span>
+  <span class="nx">shortDescription</span><span class="o">:</span> <span class="s2">&quot;project&quot;</span><span class="p">,</span>
+  <span class="nx">_id</span><span class="o">:</span> <span class="s2">&quot;5040c228787b3cc512000008&quot;</span><span class="p">,</span>
+  <span class="nx">__v</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nx">serviceCat</span><span class="o">:</span> <span class="p">[</span> <span class="p">],</span>
+  <span class="nx">workCat</span><span class="o">:</span> <span class="p">[</span> <span class="p">],</span>
+  <span class="nx">tags</span><span class="o">:</span> <span class="p">[</span> <span class="p">],</span>
+  <span class="nx">awards</span><span class="o">:</span> <span class="p">[</span> <span class="p">],</span>
+  <span class="nx">media</span><span class="o">:</span> <span class="p">[</span> <span class="p">],</span>
+  <span class="nx">previewLinks</span><span class="o">:</span> <span class="p">[</span> <span class="p">],</span>
+  <span class="nx">clients</span><span class="o">:</span> <span class="p">[</span> <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>arguments</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">description:</th><td class="field-body">project description.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">short:</th><td class="field-body">short description.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">launched:</th><td class="field-body">project launch date.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">featured:</th><td class="field-body">project featured.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">sticky:</th><td class="field-body">project sticky boolean.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">inLab:</th><td class="field-body">project inLab.</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div></blockquote>
+<div class="section" id="list">
+<h2>list<a class="headerlink" href="#list" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><a class="reference external" href="http:method">http:method</a>:: GET /v1/projects</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">get projects:</th><td class="field-body">list all projects.</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div></blockquote>
+</div>
+<div class="section" id="create">
+<h2>create<a class="headerlink" href="#create" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><a class="reference external" href="http:method">http:method</a>:: POST /v1/projects/:projectName</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">projectName:</th><td class="field-body">name of project.</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><em>accepts all object argument parameters</em></p>
+</div></blockquote>
+</div>
+<div class="section" id="update">
+<h2>update<a class="headerlink" href="#update" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><a class="reference external" href="http:method">http:method</a>:: PUT /v1/projects/:projectId/:projectName</p>
+<p><em>accepts all object argument parameters</em></p>
+</div></blockquote>
+</div>
+<div class="section" id="delete">
+<h2>delete<a class="headerlink" href="#delete" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><a class="reference external" href="http:method">http:method</a>:: DELETE /v1/projects/:projectId</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">projectId:</th><td class="field-body">id of project.</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="clients">
+<h1>Clients<a class="headerlink" href="#clients" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><div class="highlight-js"><div class="highlight"><pre><span class="p">{</span>
+  <span class="nx">clientName</span><span class="o">:</span> <span class="s2">&quot;client name&quot;</span><span class="p">,</span>
+  <span class="nx">_id</span><span class="o">:</span> <span class="s2">&quot;5040d45b97fedc8717000009&quot;</span>
+  <span class="nx">project</span><span class="o">:</span> <span class="p">[{</span>
+    <span class="nx">projectId</span><span class="o">:</span> <span class="s2">&quot;123&quot;</span>
+  <span class="p">}]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div></blockquote>
+<div class="section" id="id1">
+<h2>list<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><a class="reference external" href="http:method">http:method</a>:: GET /v1/clients/:clientId</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">clientId:</th><td class="field-body">id of client.</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div></blockquote>
+</div>
+<div class="section" id="id2">
+<h2>create<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><a class="reference external" href="http:method">http:method</a>:: POST /v1/clients/client-name</p>
+<blockquote>
+<div>parameters
+:client-name: name of client.</div></blockquote>
+</div></blockquote>
+</div>
+<div class="section" id="client-project">
+<h2>client project<a class="headerlink" href="#client-project" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><a class="reference external" href="http:method">http:method</a>:: POST /v1/clients/:id/project</p>
+<p>arguments
+:projectId: id of project.</p>
+</div></blockquote>
+</div>
+<div class="section" id="id3">
+<h2><em>delete</em><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><a class="reference external" href="http:method">http:method</a>:: DELETE /v1/clients/:clientId</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">projectId:</th><td class="field-body">id of project.</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="preview-links">
+<h1>Preview Links<a class="headerlink" href="#preview-links" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><div class="highlight-js"><div class="highlight"><pre><span class="p">{</span>
+  <span class="nx">linkText</span><span class="o">:</span> <span class="s2">&quot;preview link&quot;</span><span class="p">,</span>
+  <span class="nx">url</span><span class="o">:</span> <span class="s2">&quot;url.com/preview&quot;</span><span class="p">,</span>
+  <span class="nx">_id</span><span class="o">:</span> <span class="s2">&quot;5040c90bbe6e1b0d17000009&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div></blockquote>
+<div class="section" id="id4">
+<h2>list<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><a class="reference external" href="http:method">http:method</a>:: GET /v1/projects/:id/previewLinks</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">id:</th><td class="field-body">id of project.</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div></blockquote>
+</div>
+<div class="section" id="id5">
+<h2>create<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><a class="reference external" href="http:method">http:method</a>:: POST /v1/project/:id/previewLinks/:linkText</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">id:</th><td class="field-body">id of project.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">linkText:</th><td class="field-body">preview url link text.</td>
+</tr>
+</tbody>
+</table>
+<p><em>arguments</em></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">url:</th><td class="field-body">link url.</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div></blockquote>
+</div>
+<div class="section" id="id6">
+<h2><em>delete</em><a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><a class="reference external" href="http:method">http:method</a>:: DELETE /v1/projects/:id/previewLinks/:lid</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">id:</th><td class="field-body">id of project.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">lid:</th><td class="field-body">preview link id.</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="awards">
+<h1>Awards<a class="headerlink" href="#awards" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id7">
+<h2>list<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><a class="reference external" href="http:method">http:method</a>:: GET /v1/project/:id/awards</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">id:</th><td class="field-body">id of project.</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div></blockquote>
+</div>
+<div class="section" id="id8">
+<h2>create<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><a class="reference external" href="http:method">http:method</a>:: POST /v1/project/:id/awards/:awardName</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">id:</th><td class="field-body">id of project.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">awardName:</th><td class="field-body">name of award.</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div></blockquote>
+</div>
+<div class="section" id="id9">
+<h2>delete<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="media">
+<h1>Media<a class="headerlink" href="#media" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id10">
+<h2>list<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><a class="reference external" href="http:method">http:method</a>:: GET /v1/projects/:id/media</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">id:</th><td class="field-body">id of project.</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div></blockquote>
+</div>
+<div class="section" id="id11">
+<h2>create<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><a class="reference external" href="http:method">http:method</a>:: POST /v1/projects/:id/media/:format</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">id:</th><td class="field-body">id of project.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">format:</th><td class="field-body">media format.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">executionType:</th><td class="field-body">execution type.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">width:</th><td class="field-body">width.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">height:</th><td class="field-body">height.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">description:</th><td class="field-body">description.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">title:</th><td class="field-body">title.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">link:</th><td class="field-body">link.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">src:</th><td class="field-body">src.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">carousel:</th><td class="field-body">use in carousel.</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div></blockquote>
+</div>
+<div class="section" id="id12">
+<h2>delete<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><a class="reference external" href="http:method">http:method</a>:: DELETE /v1/project/:id/media</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">id:</th><td class="field-body">id of project.</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="tags">
+<h1>Tags<a class="headerlink" href="#tags" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id13">
+<h2>list<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><a class="reference external" href="http:method">http:method</a>:: GET /v1/tags</p>
+<dl class="docutils">
+<dt>params</dt>
+<dd><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">tagId:</th><td class="field-body">id of tag.</td>
+</tr>
+</tbody>
+</table>
+</dd>
+<dt>arguments</dt>
+<dd><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">projectId:</th><td class="field-body">id of project.</td>
+</tr>
+</tbody>
+</table>
+</dd>
+</dl>
+</div></blockquote>
+</div>
+<div class="section" id="id14">
+<h2>create<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><a class="reference external" href="http:method">http:method</a>:: POST /v1/tags/:value</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">value:</th><td class="field-body">value of tag.</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div></blockquote>
+</div>
+<div class="section" id="id15">
+<h2>delete<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><a class="reference external" href="http:method">http:method</a>:: DELETE /v1/tags/:id</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">id:</th><td class="field-body">value of tag id.</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="service-categories">
+<h1>Service Categories<a class="headerlink" href="#service-categories" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id16">
+<h2>list<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><a class="reference external" href="http:method">http:method</a>:: GET /v1/project/:id/serviceCat</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">id:</th><td class="field-body">id of project.</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div></blockquote>
+</div>
+<div class="section" id="id17">
+<h2>create<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><a class="reference external" href="http:method">http:method</a>:: POST /v1/project/:id/serviceCat/:val</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">id:</th><td class="field-body">id of project.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">val:</th><td class="field-body">value service category.</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div></blockquote>
+</div>
+<div class="section" id="id18">
+<h2>delete<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="work-categories">
+<h1>Work Categories<a class="headerlink" href="#work-categories" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id19">
+<h2>list<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><a class="reference external" href="http:method">http:method</a>:: GET /v1/project/:id/workCat</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">id:</th><td class="field-body">id of project.</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div></blockquote>
+</div>
+<div class="section" id="id20">
+<h2>create<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><a class="reference external" href="http:method">http:method</a>:: POST /v1/project/:id/workCat/:val</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">id:</th><td class="field-body">id of project.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">val:</th><td class="field-body">value of work category.</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div></blockquote>
+</div>
+<div class="section" id="id21">
+<h2>delete<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="#">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Welcome to K5&#8217;s API documentation!</a><ul>
+</ul>
+</li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+<li><a class="reference internal" href="#api-endpoints">API Endpoints</a></li>
+<li><a class="reference internal" href="#projects">Projects</a><ul>
+<li><a class="reference internal" href="#list">list</a></li>
+<li><a class="reference internal" href="#create">create</a></li>
+<li><a class="reference internal" href="#update">update</a></li>
+<li><a class="reference internal" href="#delete">delete</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#clients">Clients</a><ul>
+<li><a class="reference internal" href="#id1">list</a></li>
+<li><a class="reference internal" href="#id2">create</a></li>
+<li><a class="reference internal" href="#client-project">client project</a></li>
+<li><a class="reference internal" href="#id3"><em>delete</em></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#preview-links">Preview Links</a><ul>
+<li><a class="reference internal" href="#id4">list</a></li>
+<li><a class="reference internal" href="#id5">create</a></li>
+<li><a class="reference internal" href="#id6"><em>delete</em></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#awards">Awards</a><ul>
+<li><a class="reference internal" href="#id7">list</a></li>
+<li><a class="reference internal" href="#id8">create</a></li>
+<li><a class="reference internal" href="#id9">delete</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#media">Media</a><ul>
+<li><a class="reference internal" href="#id10">list</a></li>
+<li><a class="reference internal" href="#id11">create</a></li>
+<li><a class="reference internal" href="#id12">delete</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tags">Tags</a><ul>
+<li><a class="reference internal" href="#id13">list</a></li>
+<li><a class="reference internal" href="#id14">create</a></li>
+<li><a class="reference internal" href="#id15">delete</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#service-categories">Service Categories</a><ul>
+<li><a class="reference internal" href="#id16">list</a></li>
+<li><a class="reference internal" href="#id17">create</a></li>
+<li><a class="reference internal" href="#id18">delete</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#work-categories">Work Categories</a><ul>
+<li><a class="reference internal" href="#id19">list</a></li>
+<li><a class="reference internal" href="#id20">create</a></li>
+<li><a class="reference internal" href="#id21">delete</a></li>
+</ul>
+</li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/index.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li><a href="#">K5 API 0.1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, Brian Yang.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

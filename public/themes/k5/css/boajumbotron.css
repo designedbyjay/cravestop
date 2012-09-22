@@ -1,0 +1,28 @@
+@CHARSET "UTF-8";
+.page-header {
+	height: 30px;
+}
+
+#ajax-busy {
+	background-image:url('../img/ajax-loader.gif');
+	background-repeat: no-repeat;
+	float: right;
+	position: relative;
+	top: -37px;
+	width: 35px;
+	height: 35px;
+    display: none;
+}
+
+.ui-jcoverflip {
+   position: relative;
+ }
+ 
+ .ui-jcoverflip--item {
+   position: absolute;
+   display: block;
+ }
+ 
+ .availableScene:hover {
+    cursor:move;
+}
