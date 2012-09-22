@@ -578,7 +578,8 @@
     crave.root = (req,res) ->
       console.log 'root'
       res.render 'crave-index.ejs'
-    app.get '/', crave.root
+
+    app.get '/landing', crave.root
 
     app.get '/testpage', getAll.projects
     app.get '/viewProject', getAll.viewProject
