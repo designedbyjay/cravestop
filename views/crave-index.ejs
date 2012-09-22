@@ -8,55 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>crave stop app</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <script type="text/javascript">
- var fatsecret = {
-  variables: {
-
-    rootUrl: 'http://platform.fatsecret.com/js/Default.aspx?pg=',
-
-    splitter: 'fs_f02cad428ce04726af629ca158cfb3db',
-    key: '05db11a0bba740389461cfbd45571f97',
-    appTitle: 'My Diet',
-    navOptions: 31,
-
-    autoLoad: true,
-    autoTemplate: true
-  },
-
-  setCookie: function(name, value){
-    var date = new Date();
-    date.setTime(date.getTime()+(10*365*24*60*60*1000));
-    document.cookie = name + '=' + encodeURIComponent(value) + ';expires=' + date.toUTCString() + ';path=/';
-  },
-
-  doWrite: function(url, isCss){
-    var h = isCss ? '<link type="text/css" rel="stylesheet"' : '<script type="text/javascript"';
-    h += (isCss ? ' href' : ' src') + '="' + url;
-    h += isCss ? '"/>' : '"></script>';
-    document.write(h);
-  },
-
-  start: function(){
-    this.doWrite('http://platform.fatsecret.com/js/static/css/all.css', true);
-
-
-      this.doWrite('http://platform.fatsecret.com/js/static/css/themes/blue.css', true);
-
-
-    this.doWrite('http://platform.fatsecret.com/js/static/script/final.js');
-
-
-
-
-
-  }
-};
-fatsecret.start();
-
-
-  document.write('<div class="fatsecret_container" id="fatsecret_container"></div>');
-
-  </script>
+  <script src="/js/fatsecret.js?key=05db11a0bba740389461cfbd45571f97&auto_load=true"></script>
 </head>
 <body>
   <div id="my_container" class="fatsecret_container" ></div>
