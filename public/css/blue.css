@@ -1,0 +1,69 @@
+/* navigation */
+#fatsecret_nav td
+{
+	border-left: 1px solid #BFDBE7;
+}
+	
+.fatsecret_nav_highlight
+{
+	background-color: #BFDBE7;
+}
+
+/* canvas */
+.fatsecret_container
+{
+	border: 1px solid #4592C0;
+}
+
+.fatsecret_container .fatsecret_heading
+{
+	background-color: #D8ECF7;
+}
+
+.fatsecret_container input.fatsecret_button
+{
+	border: 1px solid #4592C0;
+	background-color: #D8ECF7;
+}
+
+.fatsecret_container .fatsecret_borderbottom
+{
+	border-bottom: 1px solid #D8ECF7;
+}
+
+/* footer */
+.fatsecret_footer
+{
+	background-color: #D8ECF7;
+	padding: 10px 0 10px 2.5%;
+	margin-top: 5px;
+}
+
+/* home */
+.fatsecret_home_summary
+{
+	border: 2px solid #468FC4;
+}
+
+/* weight history */
+.fatsecret_weighin_graph
+{
+	border: 1px solid #4592C0;
+}
+
+/* calendar */
+.fatsecret_calendar, .fatsecret_calendar tr td
+{
+	border: 2px solid #95BAC8;
+}
+
+.fatsecret_days_row td
+{
+	background-color: #85AAB8;
+	color: #FFF;
+}
+
+.fatsecret_day_number
+{
+	color: #558EA4;
+}
