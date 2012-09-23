@@ -29,7 +29,7 @@
 
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
     <article>
-       <p>showing nearby restaurants</p>
+       <p>showing nearby locations</p>
        <ul id="restaurant-list"></ul>
     </article>
     <article>
@@ -103,31 +103,26 @@ if (navigator.geolocation) {<!--{{{-->
         $.ajax
           url:url
           success: (e) ->
-            console.log e.response.venues
-            categoryList = ['Office','Arts & Crafts Store','Tech Startup','Event Space']
-            dontShow = (e) ->
-              console.log e.categories[0].name
+            # console.log e.response.venues
+            console.log e.response.venues.length
+            categoryList = ['Office','Arts & Crafts Store','Tech Startup','Event Space','Coworking Space']
+            categoryList = []
             showCat = (e) ->
+              console.log e
               listItem = '<li>' + e.name
               $('#restaurant-list').append(listItem)
+            i = 0
             $(e.response.venues).each ->
+              i++
               that = this
-              dontShow(that) if this.categories[0].name == categoryList
-              showCat(that) if this.categories[0].name != categoryList
+              showCat(that)
+              console.log i
 
-
-            # $(e.response.groups[0].items).each ->
-            # console.log this.venue.categories[0].name
-            ###
-            console.log this.venue
-            listItem = '<li>' + this.venue.name + '</li>'
-            $('#restaurant-list').append(listItem)
-            ###
 
       navigator.geolocation.getCurrentPosition(success, error)
 
     findRestaurants()
 </script>
-<script type="text/javascript" src="http://github.com/jashkenas/coffee-script/raw/master/extras/coffee-script.js"> </script>
+<script type="text/javascript" src="/js/coffee-script.js"> </script>
 </body>
 </html>
