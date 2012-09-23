@@ -1,7 +1,1 @@
-deploy to heroku
-
-* set mongoconnect to process.env.MONGOHQ_URL
-* set listen to process.env.PORT
-  heroku create --stack cedar thisapp
-  heroku addons:add mongohq:free
-
+CraveStop is an app that shows nearby food locations, calories, and alternatives
