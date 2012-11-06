@@ -6,7 +6,7 @@ var fatsecret = {
 
 		splitter: 'fs_a3315bb6fc9b4771b89f77e6059d0cf1',
 		key: '05db11a0bba740389461cfbd45571f97',
-		appTitle: 'My Diet',
+		appTitle: 'I crave...',
 		navOptions: 31,
 
 		autoLoad: true,

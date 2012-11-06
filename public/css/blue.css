@@ -1,34 +1,50 @@
 /* navigation */
 #fatsecret_nav td
 {
-	border-left: 1px solid #BFDBE7;
+
 }
 	
 .fatsecret_nav_highlight
 {
 	background-color: #BFDBE7;
+
+
+	text-indent: 570px;
+   	width: 253px;
+   	height: 253px;
+  	background: url(http://designedbyjay.com/cravestop_assets/images/logoTransparentBg.png)  
+  	no-repeat; 
 }
 
 /* canvas */
 .fatsecret_container
 {
-	border: 1px solid #4592C0;
+
 }
 
-.fatsecret_container .fatsecret_heading
-{
-	background-color: #D8ECF7;
-}
+.fatsecret_foodsearch_results{
+								margin-left: 82px;
+								margin-top: 150px;
+								width: 400px;
+							  }
+
+.fatsecret_container a .fatsecret_foodsearch_result_highlight {
+										margin-top: 50px;
+										padding: 20px auto;
+   									   }
+
 
 .fatsecret_container input.fatsecret_button
 {
-	border: 1px solid #4592C0;
-	background-color: #D8ECF7;
+
+	background-color: #fff;
+	clear: right;
+
 }
 
 .fatsecret_container .fatsecret_borderbottom
 {
-	border-bottom: 1px solid #D8ECF7;
+
 }
 
 /* footer */
@@ -42,19 +58,19 @@
 /* home */
 .fatsecret_home_summary
 {
-	border: 2px solid #468FC4;
+
 }
 
 /* weight history */
 .fatsecret_weighin_graph
 {
-	border: 1px solid #4592C0;
+
 }
 
 /* calendar */
 .fatsecret_calendar, .fatsecret_calendar tr td
 {
-	border: 2px solid #95BAC8;
+
 }
 
 .fatsecret_days_row td
